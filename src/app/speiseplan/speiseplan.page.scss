@@ -1,0 +1,18 @@
+.Preis{
+    color:green;
+    font-size:25px;
+}
+
+.Karte{
+    width:450px;
+}
+
+.Bild{
+    height: 400px;
+    object-fit: cover;
+}
+
+#speiseplan {
+    display: flex;
+    flex-wrap: wrap;
+}
