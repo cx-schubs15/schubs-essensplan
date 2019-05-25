@@ -12,6 +12,7 @@
 
 @import 'theme/reset.scss';
 @import 'theme/normalize.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body{
     background-color: RGB(87,87,87);

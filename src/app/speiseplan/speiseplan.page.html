@@ -2,8 +2,8 @@
 
   <div id="speiseplan">
 
-    <mat-form-field>
-      <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-form-field  class="Datum">
+      <input [(ngModel)]="selectedDate"  (dateChange)="datumChange()" matInput [matDatepicker]="picker" placeholder="Datum">
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>

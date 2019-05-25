@@ -5,6 +5,7 @@
 
 .Karte{
     width:450px;
+    display:inline-block;
 }
 
 .Bild{
@@ -12,7 +13,8 @@
     object-fit: cover;
 }
 
-#speiseplan {
+.Datum{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }

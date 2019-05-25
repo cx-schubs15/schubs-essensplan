@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Service } from '../services/service'
 import { Gericht } from '../classes/gericht';
 import { combineLatest } from 'rxjs';
@@ -43,5 +42,6 @@ export class SpeiseplanPage implements OnInit {
 
   datumChange(): void {
     this.getSpeiseplan();
+    
   }
 }

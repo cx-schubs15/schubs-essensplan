@@ -13,14 +13,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { DatePipe, registerLocaleData } from '@angular/common';
 import localeDe from '@angular/common/locales/de';
 
-registerLocaleData(localeDe, 'de');
+registerLocaleData(localeDe, 'de')
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
-@NgModule({
-  imports: [BrowserAnimationsModule],
-})
-export class PizzaPartyAppModule { }
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,7 +25,10 @@ export class PizzaPartyAppModule { }
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule, MatCheckboxModule,
+
   ],
   providers: [
     StatusBar,
