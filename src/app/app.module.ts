@@ -15,6 +15,13 @@ import localeDe from '@angular/common/locales/de';
 
 registerLocaleData(localeDe, 'de');
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+@NgModule({
+  imports: [BrowserAnimationsModule],
+})
+export class PizzaPartyAppModule { }
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
